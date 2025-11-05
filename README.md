@@ -81,8 +81,8 @@ MealMingle Platform is a full-featured React application that allows users to re
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/food-ordering-frontend.git
-   cd food-ordering-frontend
+   git clone https://github.com/your-username/MealMingle.git
+   cd MealMingle
    npm install
    ```
 
