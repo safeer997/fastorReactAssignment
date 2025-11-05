@@ -43,29 +43,70 @@ const swiperSlidesData = [
 ];
 
 const highlightRestro = [
-  { name: "Nik Baker's", place: 'Connaught Place, New Delhi' },
-  { name: "It's Bake", place: 'Connaught Place, New Delhi' },
-  { name: 'Cakery', place: 'Connaught Place, New Delhi' },
-  { name: "Nik Baker's", place: 'Connaught Place, New Delhi' },
-  { name: "It's Bake", place: 'Connaught Place, New Delhi' },
-  { name: 'Cakery', place: 'Connaught Place, New Delhi' },
-  { name: "Nik Baker's", place: 'Connaught Place, New Delhi' },
-  { name: "It's Bake", place: 'Connaught Place, New Delhi' },
-  { name: 'Cakery', place: 'Connaught Place, New Delhi' },
-  { name: "Nik Baker's", place: 'Connaught Place, New Delhi' },
-  { name: "It's Bake", place: 'Connaught Place, New Delhi' },
-  { name: 'Cakery', place: 'Connaught Place, New Delhi' },
+  {
+    name: 'Spice Symphony',
+    place: 'Connaught Place, Delhi',
+    image:
+      'https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=350&q=35',
+  },
+  {
+    name: 'The Curry Leaf',
+    place: 'Hauz Khas, Delhi',
+    image:
+      'https://images.pexels.com/photos/1117862/pexels-photo-1117862.jpeg?auto=compress&cs=tinysrgb&w=350&q=35',
+  },
+  {
+    name: 'Green Bowl',
+    place: 'Khan Market, Delhi',
+    image:
+      'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=350&q=35',
+  },
+  {
+    name: 'Chaat Corner',
+    place: 'Lajpat Nagar, Delhi',
+    image:
+      'https://images.pexels.com/photos/1653877/pexels-photo-1653877.jpeg?auto=compress&cs=tinysrgb&w=350&q=35',
+  },
+  {
+    name: 'Masala Magic',
+    place: 'DLF Phase 4, Gurugram',
+    image:
+      'https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=350&q=35',
+  },
+  {
+    name: 'The Dessert Den',
+    place: 'Sector 18, Noida',
+    image:
+      'https://images.pexels.com/photos/3026803/pexels-photo-3026803.jpeg?auto=compress&cs=tinysrgb&w=350&q=35',
+  },
+  {
+    name: 'Urban Tadka',
+    place: 'South Extension, Delhi',
+    image:
+      'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=350&q=35',
+  },
+  {
+    name: 'Noodle Nirvana',
+    place: 'Cyber Hub, Gurugram',
+    image:
+      'https://images.pexels.com/photos/884600/pexels-photo-884600.jpeg?auto=compress&cs=tinysrgb&w=350&q=35',
+  },
+  {
+    name: 'Bread & Butter',
+    place: 'SDA Market, Delhi',
+    image:
+      'https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=350&q=35',
+  },
 ];
 
 const imagePool = [
-  'https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=800&q=60',
-  'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=60',
-  'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=60',
-  'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=60',
-  'https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=800&q=60',
-  'https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=800&q=60',
-  'https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=60',
-  'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=60',
+  'https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=400&q=50',
+  'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=50',
+  'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400&q=50',
+  'https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=400&q=50',
+  'https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=400&q=50',
+  'https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=400&q=50',
+  'https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=400&q=50',
 ];
 
 const Home = () => {
@@ -229,7 +270,7 @@ const Home = () => {
           />
         ))}
       </Box>
-      <Box sx={{ p: 2, pt: 1 }}>
+      {/* <Box sx={{ p: 2, pt: 1 }}>
         <Box
           sx={{
             display: 'flex',
@@ -310,7 +351,99 @@ const Home = () => {
             </Card>
           ))}
         </Box>
+      </Box> */}
+
+      <Box sx={{ p: 2, pt: 1 }}>
+        <Box
+          sx={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            mb: 1.5,
+          }}
+        >
+          <Typography
+            sx={{ fontSize: '16px', fontWeight: '700', color: '#1a1a1a' }}
+          >
+            Your taste
+          </Typography>
+          <Typography
+            sx={{
+              fontSize: '12px',
+              color: '#ff6b6b',
+              cursor: 'pointer',
+              fontWeight: '600',
+            }}
+          >
+            see all →
+          </Typography>
+        </Box>
+
+        <Box
+          sx={{
+            display: 'flex',
+            gap: 2,
+            overflowX: 'auto',
+            pb: 1,
+            '&::-webkit-scrollbar': { display: 'none' },
+          }}
+        >
+          {highlightRestro.map((item, index) => (
+            <Box
+              key={index}
+              sx={{
+                minWidth: '160px',
+                borderRadius: '12px',
+                overflow: 'hidden',
+                cursor: 'pointer',
+                flexShrink: 0,
+              }}
+            >
+              <Box
+                sx={{
+                  width: '100%',
+                  height: '120px',
+                  backgroundImage: `url('${item.image}')`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  borderRadius: '12px 12px 0 0',
+                }}
+              />
+              <Box
+                sx={{
+                  bgcolor: '#f5f5f5',
+                  p: 1.5,
+                  borderRadius: '0 0 12px 12px',
+                }}
+              >
+                <Typography
+                  sx={{
+                    fontSize: '14px',
+                    fontWeight: '600',
+                    color: '#1a1a1a',
+                    mb: 0.3,
+                  }}
+                >
+                  {item.name}
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: '12px',
+                    color: '#999',
+                    fontWeight: '400',
+                    overflow: 'hidden',
+                    textOverflow: 'ellipsis',
+                    whiteSpace: 'nowrap',
+                  }}
+                >
+                  {item.place}
+                </Typography>
+              </Box>
+            </Box>
+          ))}
+        </Box>
       </Box>
+
       <Box sx={{ px: 2, py: 1 }}>
         <Swiper
           modules={[Pagination, Autoplay]}
