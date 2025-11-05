@@ -270,88 +270,6 @@ const Home = () => {
           />
         ))}
       </Box>
-      {/* <Box sx={{ p: 2, pt: 1 }}>
-        <Box
-          sx={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            mb: 1.5,
-          }}
-        >
-          <Typography
-            sx={{ fontSize: '16px', fontWeight: '700', color: '#1a1a1a' }}
-          >
-            Your taste
-          </Typography>
-          <Typography
-            sx={{
-              fontSize: '12px',
-              color: '#ff6b6b',
-              cursor: 'pointer',
-              fontWeight: '600',
-            }}
-          >
-            see all →
-          </Typography>
-        </Box>
-
-        <Box
-          sx={{
-            display: 'flex',
-            gap: 1,
-            overflowX: 'auto',
-            pb: 1,
-            '&::-webkit-scrollbar': { display: 'none' },
-          }}
-        >
-          {highlightRestro.map((item, index) => (
-            <Card
-              key={index}
-              sx={{
-                minWidth: '135px',
-                borderRadius: '10px',
-                overflow: 'hidden',
-                bgcolor: '#f0f0f0',
-                cursor: 'pointer',
-                boxShadow: 'none',
-                border: 'none',
-              }}
-            >
-              <Box
-                sx={{
-                  width: '100%',
-                  height: '95px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: '40px',
-                  bgcolor: '#e8e8e8',
-                }}
-              >
-                🍰
-              </Box>
-              <CardContent sx={{ p: 1.2 }}>
-                <Typography
-                  sx={{
-                    fontSize: '13px',
-                    fontWeight: '600',
-                    color: '#1a1a1a',
-                    mb: 0.4,
-                  }}
-                >
-                  {item.name}
-                </Typography>
-                <Typography
-                  sx={{ fontSize: '11px', color: '#999', fontWeight: '400' }}
-                >
-                  {item.place}
-                </Typography>
-              </CardContent>
-            </Card>
-          ))}
-        </Box>
-      </Box> */}
 
       <Box sx={{ p: 2, pt: 1 }}>
         <Box
@@ -456,7 +374,7 @@ const Home = () => {
             <SwiperSlide key={index}>
               <Box
                 sx={{
-                  height: '200px',
+                  height: { xs: '200px', md: '320px' },
                   backgroundImage: `linear-gradient(135deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.2) 100%), url('${slide.bgImage}')`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',

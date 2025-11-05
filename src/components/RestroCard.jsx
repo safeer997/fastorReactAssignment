@@ -57,6 +57,10 @@ const RestroCard = ({ res, imageUrl, rating }) => {
             display: 'block',
             flexShrink: 0,
             marginLeft: '12px',
+            '@media (min-width: 1024px)': {
+              width: 200,
+              height: 180,
+            },
           }}
         />
 
@@ -71,6 +75,11 @@ const RestroCard = ({ res, imageUrl, rating }) => {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-between',
+            '@media (min-width: 1024px)': {
+              px: 3,
+              minHeight: 180,
+              height: 180,
+            },
           }}
         >
           <Box>
@@ -83,12 +92,22 @@ const RestroCard = ({ res, imageUrl, rating }) => {
                 textOverflow: 'ellipsis',
                 whiteSpace: 'nowrap',
                 mt: 0,
+                '@media (min-width: 1024px)': {
+                  fontSize: 22,
+                },
               }}
             >
               {res.restaurant_name}
             </Typography>
             <Typography
-              sx={{ fontSize: 13, color: '#9e9e9e', fontWeight: 400 }}
+              sx={{
+                fontSize: 13,
+                color: '#9e9e9e',
+                fontWeight: 400,
+                '@media (min-width: 1024px)': {
+                  fontSize: 15,
+                },
+              }}
             >
               Cakes, Pastry, Pastas
             </Typography>
@@ -100,6 +119,9 @@ const RestroCard = ({ res, imageUrl, rating }) => {
                 overflow: 'hidden',
                 textOverflow: 'ellipsis',
                 whiteSpace: 'nowrap',
+                '@media (min-width: 1024px)': {
+                  fontSize: 15,
+                },
               }}
             >
               {cityName}
@@ -111,6 +133,9 @@ const RestroCard = ({ res, imageUrl, rating }) => {
                 color: '#c76f51',
                 display: 'flex',
                 alignItems: 'center',
+                '@media (min-width: 1024px)': {
+                  fontSize: 15,
+                },
               }}
             >
               <span
@@ -159,25 +184,51 @@ const RestroCard = ({ res, imageUrl, rating }) => {
                   color: '#3b3b3b',
                   fontSize: 15,
                   fontWeight: 700,
+                  '@media (min-width: 1024px)': {
+                    fontSize: 17,
+                  },
                 }}
               >
                 <span style={{ marginRight: 4 }}>★</span>
                 <span>4.5</span>
               </Box>
               <Typography
-                sx={{ fontSize: 11, color: '#9e9e9e', fontWeight: 400, mb: 0 }}
+                sx={{
+                  fontSize: 11,
+                  color: '#9e9e9e',
+                  fontWeight: 400,
+                  mb: 0,
+                  '@media (min-width: 1024px)': {
+                    fontSize: 12,
+                  },
+                }}
               >
                 Popularity
               </Typography>
             </Box>
             <Box sx={{ textAlign: 'right', flexShrink: 0 }}>
               <Typography
-                sx={{ fontSize: 18, fontWeight: 700, color: '#3b3b3b' }}
+                sx={{
+                  fontSize: 18,
+                  fontWeight: 700,
+                  color: '#3b3b3b',
+                  '@media (min-width: 1024px)': {
+                    fontSize: 20,
+                  },
+                }}
               >
                 $ 200
               </Typography>
               <Typography
-                sx={{ fontSize: 11, color: '#9e9e9e', fontWeight: 400, mb: 0 }}
+                sx={{
+                  fontSize: 11,
+                  color: '#9e9e9e',
+                  fontWeight: 400,
+                  mb: 0,
+                  '@media (min-width: 1024px)': {
+                    fontSize: 12,
+                  },
+                }}
               >
                 Cost for two
               </Typography>

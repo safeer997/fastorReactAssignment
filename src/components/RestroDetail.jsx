@@ -81,7 +81,7 @@ const RestroDetail = () => {
         alt={restaurant.restaurant_name}
         sx={{
           width: '100%',
-          height: 360,
+          height: { xs: 570, md: 560 },
           objectFit: 'cover',
         }}
       />
